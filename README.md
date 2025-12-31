@@ -1,16 +1,7 @@
 # stpl_assignment
 
-A new Flutter project.
+STPL Assignment.
 
-## Getting Started
+Download The App From [https://drive.google.com/file/d/16haUU-dM56uF_5c0CN292wnaV95-s5cZ/view?usp=share_link]
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Assignment: Started On 9.30 PM Ended On 11.25 PM
