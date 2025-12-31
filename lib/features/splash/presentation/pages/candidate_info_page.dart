@@ -88,23 +88,29 @@ class CandidateInfoPage extends StatelessWidget {
 
             const SizedBox(height: 30),
 
-            Container(
-              padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
-              decoration: BoxDecoration(
-                color: Colors.black,
-                borderRadius: BorderRadius.circular(30),
-              ),
-              child: Row(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  const Icon(Icons.star, color: Colors.amber, size: 18),
-                  const SizedBox(width: 8),
-                  const Text("View Assignment Source", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
-                ],
-              ),
-            ).animate(onPlay: (c) => c.repeat(reverse: true))
-                .shimmer(delay: 2.seconds, duration: 1500.ms)
-                .moveY(begin: 0, end: -5, duration: 2.seconds),
+            InkWell(
+              borderRadius: BorderRadius.circular(30),
+              onTap: (){
+                _launchUrl("https://github.com/pavanpatil007/stpl_assignment");
+              },
+              child: Container(
+                padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
+                decoration: BoxDecoration(
+                  color: Colors.black,
+                  borderRadius: BorderRadius.circular(30),
+                ),
+                child: Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    const Icon(Icons.star, color: Colors.amber, size: 18),
+                    const SizedBox(width: 8),
+                    const Text("View Assignment Source", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
+                  ],
+                ),
+              ).animate(onPlay: (c) => c.repeat(reverse: true))
+                  .shimmer(delay: 2.seconds, duration: 1500.ms)
+                  .moveY(begin: 0, end: -5, duration: 2.seconds),
+            ),
 
             const SizedBox(height: 40),
           ],
